@@ -1,5 +1,9 @@
 $(function(){
 
+  //objectfit
+
+  objectFitImages();
+
   // CSS変数 IE 対応
 cssVars({
   rootElement: document

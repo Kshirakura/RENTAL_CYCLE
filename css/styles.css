@@ -168,7 +168,7 @@ slick
 .menu-btn {
   position: fixed;
   top: 1vh;
-  right: 1vh;
+  right: 2vh;
   display: flex;
   height: 5vh;
   width: 5vh;
@@ -324,6 +324,7 @@ main
   min-height: 93vh;
   height: auto;
   object-fit: cover;
+  font-family: 'object-fit: cover;';
 }
 
 .slide_overlay {
@@ -833,6 +834,7 @@ footer
   .mv_container .image img{
     height: calc(100vh - 70px);
     object-fit: cover;
+    font-family: 'object-fit: cover;';
   }
   
   .slide_overlay {
