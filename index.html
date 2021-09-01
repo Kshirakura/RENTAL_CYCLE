@@ -19,20 +19,30 @@
     <meta property="og:image" content="https://kshirakura.github.io/RENTAL_CYCLE/ogp.png">
     <meta property="og:site_name" content="RENTAL CYCLE">
     <meta property="og:locale" content="ja_JP" />
+    <link rel="stylesheet" href="https://use.typekit.net/enx4qnn.css">
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'lpk0uni',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
   </head>
   <body>
     <div class="container_all">
-      <header id="header">
+      <header class="header">
         <div class="header_container">
           <!-- ロゴ画像入れます -->
-          <h1 class=site-title><a href=""><img src="rental_cycle_logo-w.svg" alt="Rental Cycle"></a></h1>
+          <h1 class=site-title><a href=""><img src="rental_cycle_logo-blue.svg" alt="Rental Cycle"></a></h1>
           <nav>
             <ul class="main-menu">
               <li><a class="top-btn" href="#top">TOP</a></li>
-              <li><a class="scroll-btn" href="#concept">Concept</a></li>
-              <li><a class="scroll-btn" href="#take_it_easy">Take It Easy</a></li>
-              <li><a class="scroll-btn" href="#how_to_use">How To Use</a></li>
               <li><a class="scroll-btn" href="#how_much">How Much</a></li>
+              <li><a class="scroll-btn" href="#take_it_easy">Merits</a></li>
+              <li><a class="scroll-btn" href="#how_to_use">How To Use</a></li>
               <li><a class="scroll-btn" href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger-menu">
@@ -47,21 +57,14 @@
       <div class="modal">
         <ul class="modal-menu">
           <li><a class="top-btn" href="#top">TOP</a></li>
-          <li><a class="scroll-btn" href="#concept">Concept</a></li>
-          <li><a class="scroll-btn" href="#take_it_easy">Take It Easy</a></li>
-          <li><a class="scroll-btn" href="#how_to_use">How To Use</a></li>
           <li><a class="scroll-btn" href="#how_much">How Much</a></li>
+          <li><a class="scroll-btn" href="#take_it_easy">Merits</a></li>
+          <li><a class="scroll-btn" href="#how_to_use">How To Use</a></li>
           <li><a class="scroll-btn" href="#contact">Contact</a></li>
         </ul>
       </div>
-      <div class="mainvisual">
-        <div class="upper_wave">
-          <img src="img/wave.svg" alt="wave">
-        </div>
-        <div class="under_wave">
-          <img src="img/wave.svg" alt="wave">
-        </div>
-        <div class="mv_container container">
+      <div class="mainvisual section">
+        <div class="mv_container">
           <div class="image">
             <img src="img/slides/slide1.jpg" alt="一枚目のスライド">
           </div>
@@ -72,11 +75,17 @@
             <img src="img/slides/slide3.jpg" alt="三枚目のスライド">
           </div>
         </div>
-      </div>
-      <div class="copy_apps">
-        <div class="copy_apps_container container">
+        <div class="slide_overlay"></div>
+        <div class="copy_apps">
           <div class="copy">
-            <h2>ちょっと楽。</h2>
+            <div class="copy_sp">
+              <h2>MAKE<br>EVERYDAY<br><span>Better</span><br>WITH<br>BIKE</h2>
+              <h3>自転車で、<br>毎日をより良く。</h3>
+            </div>
+            <div class="copy_pc">
+              <h2>MAKE EVERYDAY <span>Better</span><br> WITH BIKE</h2>
+              <h3>自転車で、毎日をより良く。</h3>
+            </div>
           </div>
           <div class="apps">
             <div class="app_store"><img src="img/appstore.svg" alt="app_store"></div>
@@ -85,92 +94,93 @@
         </div>
       </div>
       
-      <div class="story_image" id="concept">
-        <div class="story_image_container container">
-          <div class="image">
-            <img src="img/story.jpg" alt="ストーリーイメージ">
-          </div>
-          <div class="story">
-            <h2 class="content-title">Concept</h2>
-            <p>
-              ちょっとお出かけ。<br>
-              ちょっと楽したい。<br>
-            </p>
-            <p>
-              ちょっとレンタルできる自転車。
-            </p>
-          </div>
-          <div class="service_name">
-            <div class="service_name_container container">
-              <h2><img src="rental_cycle_logo.svg" alt="Rental Cycle"></h2>
+      <div class="how_much section" id="how_much">
+          <div class="how_much_container container">
+            <h2 class="content-title">How Much</h2>
+            <div class="plans">
+              <div class="plan">
+                <h3>ライトプラン</h3>
+                <h4>200円</h4>
+                <p>30分未満の軽いお買い物などに。</p>
+                <div class="more"><a href="">More</a></div>
+              </div>
+              <div class="plan">
+                <h3>1dayプラン</h3>
+                <h4>800円<span>/日</span></h4>
+                <p>休日のお出かけなどに。</p>
+                <div class="more"><a href="">More</a></div>
+              </div>
+              <div class="plan">
+                <h3>年間メンバーシップ</h3>
+                <h4>700円<span>/月</span></h4>
+                <p>自転車をよく使う方向け。<br>
+                  年間一括プラン。
+                </p>
+                <div class="more"><a href="">More</a></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       
       
-      
-      <div class="take_it_easy_images" id="take_it_easy">
+      <div class="take_it_easy_images section" id="take_it_easy">
         <div class="take_it_easy_images_container container">
           <div class="take_it_easy">
             <h2 class="content-title" id="content-title1">
-              Take It Easy
+              Merits
             </h2>
-            <p>いい話いい話いい話いい話いい話いい話いい話いい話</p>
+            <p>ちょっと遠くに買い物、気分転換にツーリング、軽い運動、通勤。なんでも使える。</p>
           </div>
           <div class="images">
             <div class="image fadein1 fadeIn img1" data-offset="20">
               <img src="img/merits/merit1.jpg" alt="メリット1">
               <h3>CASE:1</h3>
-              <p>あんなとき、こんなとき</p>
+              <p>タイムセールが終わりそうでも、自転車があれば大丈夫。</p>
             </div>
             <div class="image fadein1 fadeIn img2" data-offset="20">
-              <img src="img/merits/merit2.jpg" alt="メリット2">
+              <img src="img/merits/merit3.jpg" alt="メリット2">
               <h3>CASE:2</h3>
-              <p>あんなとき、こんなとき</p>
+              <p>歩くと大変な朝の通勤も、自転車があれば大丈夫。</p>
             </div>
             <div class="image fadein1 fadeIn img3" data-offset="20">
-              <img src="img/merits/merit3.jpg" alt="メリット3">
+              <img src="img/merits/merit2.jpg" alt="メリット3">
               <h3>CASE:3</h3>
-              <p>あんなとき、こんなとき</p>
+              <p>仕事でミスしてしまった次の日も、自転車があれば大丈夫。</p>
             </div>
           </div>
         </div>
       </div>
       
       
-      <div class="how_to_use_images" id="how_to_use">
+      <div class="how_to_use_images section" id="how_to_use">
         <div class="how_to_use_images_container container">
           <div class="how_to_use">
             <h2 class="content-title" id="content-title2">How To Use</h2>
-            <p>いい話いい話いい話いい話いい話いい話いい話いい話</p>
+            <p>アプリをインストール、ステーションで自転車を拾って、乗る。ただそれだけ。</p>
           </div>
           <div class="images">
             <div class="image fadein2 fadeIn img1" data-offset="20">
               <img src="img/3steps/step1.jpg" alt="ステップ1">
               <h3>STEP:1</h3>
-              <p>こうやって、ああして</p>
+              <p>アプリをインストール</p>
             </div>
             <div class="image fadein2 fadeIn img2" data-offset="20">
               <img src="img/3steps/step2.jpg" alt="ステップ2">
               <h3>STEP:2</h3>
-              <p>こうやって、ああして</p>
+              <p>街ナカ自転車ステーションで自転車を拾う<div class=""></div></p>
             </div>
             <div class="image fadein2 fadeIn img3" data-offset="20">
               <img src="img/3steps/step3.jpg" alt="ステップ3">
               <h3>STEP:3</h3>
-              <p>こうやって、ああして</p>
+              <p>乗る。</p>
             </div>
           </div>
         </div>
       </div>
       
       
-      <div class="how_much" id="how_much">
-        <div class="hide_wrap">
-          <div class="how_much_container container" id="scroll_area">
-            <h2 class="content-title">How Much</h2>
-            <div class="table-content scroll-content">
+      
+            <!-- <div class="table-content scroll-content">
               <table class="table">
                 <tr>
                   <th class="fixed01">プラン</th>
@@ -186,28 +196,28 @@
                 </tr>
                 <tr>
                   <td class="fixed01">3時間パック</td>
-                  <td>1000円</td>
+                  <td>600円</td>
                 </tr>
                 <tr>
                   <td class="fixed01">6時間パック</td>
-                  <td>1800円</td>
+                  <td>1000円</td>
                 </tr>
                 <tr>
                   <td class="fixed01">12時間パック</td>
-                  <td>3000円</td>
+                  <td>1500円</td>
                 </tr>
                 <tr>
                   <td class="fixed01">24時間パック</td>
-                  <td>4800円</td>
+                  <td>2000円</td>
                 </tr>
               </table>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
       
       
-      <div class="download_image">
+      <div class="download_image section">
         <div class="download_image_container container">
           <div class="download">
             <h2 class="content-title">Download</h2>
@@ -234,7 +244,7 @@
             <form>
               <div class="part">
                 <label for="name">名前:</label>
-                <input type="text" id="name" value="" placeholder="マイケル">
+                <input type="text" id="name" value="" placeholder="自転車 太郎">
               </div>
               <div class="part">
                 <label for="tel">TEL:</label>
