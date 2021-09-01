@@ -118,45 +118,41 @@ slick
 --------*/
 #page-top {
   position: fixed;
+  display: inline-block;
   bottom: 20px;
   right: 20px;
   font-size: 20px;
   line-height: 1;
   z-index: 99;
-  
-  animation: up_down 4s infinite;
-}
-
-@keyframes up_down {
-  0% {
-    transform: translate(0,-25%);
-  }
-  50% {
-    transform: translate(0,25%);
-  }
-
-  100% {
-    transform: translate(0,-25%);
-  }
-}
-
-#page-top img {
-  /* width: 50px; */
-  /* height: 50px; */
+  /* background: var(--blue); */
+  opacity: 0.7;
 }
 
 #page-top a {
-  /* background: #E83828; */
-  text-decoration: none;
-  color: #fff;
-  width: 30px;
-  padding: 10px 8px 14px;
-  text-align: center;
+  width: 25px;
+  height: 25px;
   display: block;
   border-radius: 5%;
-  opacity: 0.7;
-  transition: all .3s ease;
+  border: solid 7px var(--water);
+  border-right: 0;
+  border-bottom: 0;
+  position: relative;
+  transform: rotate(45deg);
 }
+
+#page-top a:after {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  content: '';
+  width: 37px;
+  height: 37px;
+  display: block;
+  border: solid 4px var(--water);
+  border-right: 0;
+  border-bottom: 0;
+}
+
 #page-top a:hover {
   text-decoration: none;
   opacity: .5;
@@ -274,6 +270,7 @@ header
   left: 20px;
   top: 3.5vh;
   transform: translateY(-50%);
+  width: 30%;
 }
 
 .header .site-title a {
@@ -281,7 +278,7 @@ header
 }
 
 .header .site-title img {
-  width: 50%;
+  width: 100%;
   vertical-align: middle;
 }
 
@@ -304,7 +301,7 @@ main
   width: 100%;
   height: 100%;
   position: fixed;
-  top: 55px;
+  top: 7vh;
   z-index: 400;
   font-size: 3rem;
 }
@@ -312,6 +309,7 @@ main
 .mainvisual {
   margin-top: 7vh;
   height: 93vh;
+  height: auto;
 }
 
 .modal-menu {
@@ -323,7 +321,8 @@ main
 }
 
 .mv_container .image img{
-  height: 93vh;
+  min-height: 93vh;
+  height: auto;
   object-fit: cover;
 }
 
@@ -591,6 +590,15 @@ footer
   /*--------
   copy
   ------ */
+
+.mainvisual,
+.mv_container,
+.mv_container .image img,
+.slide_overlay {
+  min-height: calc(1024px - 7vh);
+  height: 93vh;
+}
+
 .how_much_container .plans {
   display: flex;
   justify-content: space-between;
@@ -650,7 +658,8 @@ footer
 
   .header .site-title {
     margin-right: 20px;
-    width: 30%;
+    width: 20%;
+
   }
 
   .header .site-title img {
@@ -669,7 +678,7 @@ footer
 
   .header .main-menu li {
     margin-right: 2vw;
-    padding: 10px 20px 5px;
+    padding: 8px 20px 5px;
   }
 
   .header .main-menu li a {
@@ -700,6 +709,8 @@ footer
     font-size: 4.6rem;
     line-height: 10rem;
   }
+
+
   
   .copy h3 {
     font-size: 3rem;
@@ -774,13 +785,17 @@ footer
     margin: 0 auto;
   }
 
+  .header {
+    height: 70px;
+  }
+
   .header_container {
-    height: 100%;
+    height: 70px;
     align-items: center;
   }
 
   .header_container .site-title {
-    width: 20%;
+    width: 15%;
   }
 
   .header .site-title {
@@ -798,6 +813,42 @@ footer
     font-size: min(2vw, 3rem);
   }
 
+  .mainvisual {
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+  }
+  
+  .modal-menu {
+    margin: 30px;
+  }
+  
+  .mv_container{
+    height: 100%;
+  }
+
+  .mv_container .image {
+    height: calc(100vh - 70px);
+  }
+  
+  .mv_container .image img{
+    height: calc(100vh - 70px);
+    object-fit: cover;
+  }
+  
+  .slide_overlay {
+    position: absolute;
+    height: calc(100vh - 70px);
+    top: 70px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+  }
+
+  .mainvisual,
+.mv_container,
+.mv_container .image img,
+.slide_overlay {
+  min-height: auto;
+}
 
 
   .copy_pc {
@@ -807,6 +858,7 @@ footer
   .copy_sp {
     display: none;
   }
+
 
   .apps {
     justify-content: start;

@@ -1,5 +1,21 @@
 $(function(){
 
+  // CSS変数 IE 対応
+cssVars({
+  rootElement: document
+});
+
+  //ie判定
+  var userAgent = window.navigator.userAgent.toLowerCase();
+  if(userAgent.indexOf('msie') != -1 ||
+        userAgent.indexOf('trident') != -1) {
+          $('.fadeIn').removeClass('fadeIn')
+          $('.fadein1').removeClass('fadein1')
+          $('.fadein2').removeClass('fadein2')
+        }
+
+
+
   //page-top
 
   $('.top-btn').click(function() {
