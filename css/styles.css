@@ -270,7 +270,7 @@ header
   left: 20px;
   top: 3.5vh;
   transform: translateY(-50%);
-  width: 40%;
+  width: 30%;
 }
 
 .header .site-title a {
@@ -657,9 +657,9 @@ footer
     align-items: center;
   }
 
-  .header_container .site-title {
+  .header .site-title {
     margin-right: 20px;
-    width: 30%;
+    width: 20%;
 
   }
 
@@ -796,7 +796,7 @@ footer
   }
 
   .header_container .site-title {
-    width: 20%;
+    width: 15%;
   }
 
   .header .site-title {
